@@ -1,0 +1,66 @@
+\newpage
+\thispagestyle{empty}
+
+\begin{tikzpicture}[overlay]
+\fill [fill=blueblack] (-1,1) rectangle (\paperwidth,-5);
+\fill [fill=blueblack] 
+	 (-1,-5) node[anchor=north]{}
+  -- (\paperwidth,-5) node[anchor=north]{}
+  -- (-1,-6) node[anchor=south]{}
+  -- cycle;
+\end{tikzpicture}
+
+\vspace{0.5cm}
+{\center\color{white} 
+{\Huge \textbf{Dossier de Location}}
+\newPar
+{\Large John Doe}
+\newPar
+{\Large \today}\\
+}
+\vspace{40mm}
+
+
+{\large
+%------------------------------------
+Madame, Monsieur,
+\newPar
+\lipsum[1]
+\newPar
+Vous trouverez ci-dessous un récapitulatif de mon dossier de location.
+\newPar
+%------------------------------------
+
+\lineh
+
+\textbf{Contact}\\
+\newPar
+\begin{tabularx}{\textwidth}{p{4cm}X}
+\textbf{Téléphone} & 06.00.00.00.00\\
+\textbf{Mail} & john.doe@mail.fr
+\end{tabularx}
+\newPar
+
+\lineh
+
+\textbf{Situation}\\
+\newPar
+\begin{tabularx}{\textwidth}{p{4cm}X}
+\textbf{Adresse actuelle} & 666 down street\\
+\textbf{Profession} & Unemployed\\
+\textbf{Employeur} & Evil company\\
+\textbf{Revenu mensuel} & 666€ net/mois
+\end{tabularx}
+\newPar
+
+\lineh
+
+\textbf{Garant}
+\newPar
+\begin{tabularx}{\textwidth}{p{4cm}X}
+& John Guarantor\\
+\textbf{Profession} & Unemployed\\
+\textbf{Employeur} & Evil company\\
+\textbf{Revenu mensuel} & 666 net/mois\\
+\end{tabularx}
+}

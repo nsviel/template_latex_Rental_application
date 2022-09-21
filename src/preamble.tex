@@ -1,0 +1,65 @@
+\documentclass[a4paper, 11pt, oneside]{book}
+
+\usepackage{minitoc}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{1}
+\setcounter{minitocdepth}{1}
+
+
+%Packages
+\usepackage[left=1cm,right=1cm,top=2cm,bottom=1cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage[usenames,dvipsnames]{xcolor}		
+\usepackage{supertabular} 		
+\usepackage{titlesec}			
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{tikz}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{sectsty}
+\usepackage{lipsum} 
+\usepackage{setspace}
+\RequirePackage{color,graphicx}
+\usepackage[linktocpage, pagebackref]{hyperref}
+
+%Header
+\renewcommand{\chaptername}{Dossier}
+\pagestyle{fancy}  
+\fancyhf{}
+\fancyfoot{}
+\fancyhead[L]{\hyperlink{chapter::\theHchapter}{\nouppercase{\leftmark}} \hspace{4cm} \hyperlink{page.2}{Table des matières}}
+\fancyhead[R]{\thepage}  
+
+%Date
+\usepackage[ddmmyyyy]{datetime}  
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}   
+
+%Options
+\definecolor{linkcolour}{rgb}{0, 0.2, 0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+	
+%Table of content
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+\renewcommand\contentsname{Table des matières}
+\renewcommand{\mtctitle}{}
+\minitoc
+
+%Style
+\definecolor{blueblack}{RGB}{92,98,112}
+\definecolor{mediumgray}{RGB}{150,150,150}
+\definecolor{lightgray}{RGB}{240,240,240}
+\colorlet{titlerulecolor}{mediumgray}
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\setlength\parindent{0pt}
+
+%Commands
+\newcommand{\newPar}{\\~\\} 
+\newcommand{\lineh}{\noindent\rule{\textwidth}{0.5pt}}
+\sectionfont{\centering}
+\titleformat{\chapter}[block]{\bfseries\Huge}{}{0em}{}
+
