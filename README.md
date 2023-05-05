@@ -1,1 +1,1 @@
-# Latex template for rental application 
+Latex template for rental application 
